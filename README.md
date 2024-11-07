@@ -1,7 +1,7 @@
 
 # Phaser_StarterPack
 
-Bienvenue dans le **Phaser_StarterPack** ! <br>
+Bienvenue dans le **Phaser_StarterPack** ! <br><br>
 Ce pack de démarrage vous permet de créer rapidement des jeux web en utilisant [Phaser](https://phaser.io/), un framework puissant pour le développement de jeux 2D. <br>
 Ce repo est conçu pour être facilement cloné et utilisé par tous les développeurs, qu'ils soient débutants ou plus expérimentés. <br>
 Il est prêt à l'emploi, avec une structure organisée et des bonnes pratiques en place.
@@ -32,16 +32,23 @@ Vous y trouverez des éléments comme :
 ## Fonctionnalités
 
 ### 1. **Structure claire et bien documentée**
-   - **HTML de base** : Importation de Phaser via un CDN et ajout d'un fichier JavaScript externe pour la logique de jeu.
-   - **JavaScript modulaire** : Les fichiers JavaScript sont séparés par fonctionnalité (par exemple, configuration du jeu, redimensionnement de la fenêtre, gestion des scènes).
-   - **Phaser 3** : Utilisation de la dernière version de Phaser pour les jeux 2D.
+   - **HTML de base** : <br>
+`Importation de Phaser via un CDN et ajout d'un fichier JavaScript externe pour la logique de jeu.`
+
+   - **JavaScript modulaire** : <br>
+`Les fichiers JavaScript sont séparés par fonctionnalité` <br>
+`(Par exemple, configuration du jeu, redimensionnement de la fenêtre, gestion des scènes).`
+
+   - **Phaser 3** : <br>
+`Utilisation de la dernière version de Phaser pour les jeux 2D.`
 
 ### 2. **Adaptabilité**
    - Le jeu s'ajuste automatiquement à la taille de l'écran via la fonction de redimensionnement.
    - L'arrière-plan et le logo Phaser sont dimensionnés dynamiquement en fonction de la taille de la fenêtre.
 
 ### 3. **Prêt à l'emploi**
-   - Clonez le repo et commencez à coder directement. Il vous suffit de modifier les fichiers existants ou d'ajouter de nouvelles scènes, logiques de jeu et assets.
+   - Clonez le repo et commencez à coder directement. <br>
+   - Il vous suffit de modifier les fichiers existants ou d'ajouter de nouvelles scènes, logiques de jeu et assets.
 
 ## Installation
 
@@ -49,14 +56,14 @@ Vous y trouverez des éléments comme :
 
 Avant de commencer, vous devez avoir **Node.js** et **npm** installés sur votre machine.
 
-1. **Clonez ce repo**
-   `git clone https://github.com/votre-utilisateur/Phaser_StarterPack.git`
+1. **Clonez ce repo** <br>
+`git clone https://github.com/votre-utilisateur/Phaser_StarterPack.git`
 
 2. **Installez les dépendances**
-   Si vous souhaitez ajouter des dépendances supplémentaires à votre projet (comme des plugins Phaser ou d'autres outils), vous pouvez les installer via npm :
-   `npm init -y`
+   Si vous souhaitez ajouter des dépendances supplémentaires à votre projet (comme des plugins Phaser ou d'autres outils), vous pouvez les installer via npm : <br>
+`npm init -y`
 
-3. **Lancez le projet**
+4. **Lancez le projet**
    Vous pouvez ouvrir directement le fichier `index.html` ou utiliser l'extension "Live Server" de VS Code, pour voir le jeu en action.
 
 ## Structure du projet
@@ -91,7 +98,7 @@ Pour ajouter une nouvelle scène à votre jeu, suivez ces étapes simples :
 import newScene from "../scene/newScene.js";  // Importez votre nouvelle scène
 
 const config = {
-    // Autres configurations...
+    // Vos configurations...
     scene: [baseScene, newScene], // Ajoutez votre scène ici
 };
 ```
@@ -105,35 +112,27 @@ Les contributions sont les bienvenues ! Si vous souhaitez améliorer ce projet, 
 1. **Fork ce dépôt** : 
    - Cliquez sur le bouton "Fork" en haut à droite de cette page pour créer une copie de ce projet dans votre propre compte GitHub.
    
-2. **Clone ton fork sur ton machine** :
-   ```bash
-   git clone https://github.com/votre-utilisateur/Phaser_StarterPack.git
-   cd Phaser_StarterPack
-   ```
+2. **Clone ton fork sur ton machine** : <br>
+`git clone https://github.com/votre-utilisateur/Phaser_StarterPack.git`
 
 3. **Crée une branche pour ta fonctionnalité ou ta correction** :
-   - Pour chaque nouvelle fonctionnalité ou correction de bug, crée une branche dédiée :
-     ```bash
-     git checkout -b ma-nouvelle-fonctionnalite
-     ```
+   - Pour chaque nouvelle fonctionnalité ou correction de bug, crée une branche dédiée : <br>
+`git checkout -b ma-nouvelle-fonctionnalite`
 
 4. **Fais tes modifications** :
-   - Apporte tes modifications au code. N'oublie pas de mettre à jour la documentation et d'ajouter des commentaires clairs dans le code pour expliquer tes changements.
+   - Apporte tes modifications au code.
+   - N'oublie pas de mettre à jour la documentation et d'ajouter des commentaires clairs dans le code pour expliquer tes changements.
    - Si tu ajoutes une fonctionnalité, essaie de rendre l'architecture du projet aussi modulaire que possible.
    - Si tu corrige un bug, assure-toi de bien tester la correction.
 
 5. **Commit tes modifications** :
-   - Une fois que tu as effectué tes changements, commit-les :
-     ```bash
-     git add .
-     git commit -m "Ajout d'une nouvelle fonctionnalité ou correction d'un bug"
-     ```
+   - Une fois que tu as effectué tes changements, commit-les : <br>
+`git add .`
+`git commit -m "Ajout d'une nouvelle fonctionnalité ou correction d'un bug"`
 
 6. **Push tes modifications sur GitHub** :
-   - Pousse ta branche vers ton fork :
-     ```bash
-     git push origin ma-nouvelle-fonctionnalite
-     ```
+   - Pousse ta branche vers ton fork : <br>
+`git push origin ma-nouvelle-fonctionnalite`
 
 7. **Ouvre une Pull Request** :
    - Ouvre une pull request pour soumettre tes modifications au dépôt principal.
@@ -141,26 +140,11 @@ Les contributions sont les bienvenues ! Si vous souhaitez améliorer ce projet, 
 
 ### Bonnes pratiques pour les contributions
 
-- **Respecte l'architecture** : Ce projet est conçu pour être modulaire, avec des fichiers séparés pour la configuration, les scènes, etc. Assure-toi que tes ajouts respectent cette structure.
-- **Code propre** : Assure-toi que ton code est propre, bien formaté, et suit les conventions de nommage.
-- **Tests** : Si tu ajoutes de nouvelles fonctionnalités, veille à tester leur bon fonctionnement. Si nécessaire, ajoute des tests unitaires.
-- **Documentation** : Documente bien tes modifications dans le code et dans ce fichier README si nécessaire, afin que d'autres développeurs puissent comprendre ton ajout facilement.
-
-### Que puis-je faire ?
-
-Voici quelques idées d'améliorations possibles pour le projet :
-
-- **Ajouter de nouvelles scènes** : Crée de nouvelles scènes de jeu avec différentes mécaniques (ex: un menu, des niveaux, ou un système de score).
-- **Améliorer le système de gestion des assets** : Ajouter un gestionnaire de ressources plus avancé ou un préchargement de ressources.
-- **Support multilingue** : Ajouter un système de langues pour rendre le jeu accessible à un public international.
-- **Ajouter des effets spéciaux** : Créer de nouveaux effets visuels ou sonores à utiliser dans le jeu.
-- **Optimisation** : Chercher des moyens d'améliorer les performances du jeu sur différents appareils (mobile, desktop).
+- **Respecte l'architecture** : Ce projet est conçu pour être modulaire, avec des fichiers séparés pour la configuration, les scènes, etc. <br><br>
+- **Code propre** : Assure-toi que ton code est propre, bien formaté, et suit les conventions de nommage. <br><br>
+- **Documentation** : Documente bien tes pull request, afin que d'autres développeurs puissent comprendre ton ajout facilement. <br><br>
 
 Merci de contribuer à ce projet et de partager vos idées !
-
-## Licence
-
-Ce projet est sous licence MIT - voir le fichier [LICENSE](LICENSE) pour plus d'informations.
 
 ---
 
