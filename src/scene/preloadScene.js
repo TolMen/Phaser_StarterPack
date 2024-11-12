@@ -1,8 +1,9 @@
+import modelScene from "../config/modelScene.js";
 import { assets } from "../config/assets.js";
 
-export default class preloadScene extends Phaser.Scene {
+export default class preloadScene extends modelScene {
     constructor() {
-        super({ key: "preloadScene" });
+        super("preloadScene" );
     }
 
     preload() {

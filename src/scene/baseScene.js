@@ -1,20 +1,24 @@
+import modelScene from "../config/modelScene.js";
+
 // Scène de base héritant de Phaser.Scene
-export default class baseScene extends Phaser.Scene {
+export default class baseScene extends modelScene {
     constructor() {
-        super({ key: "baseScene" });
+        super("baseScene");
     }
 
     create() {
         // Ajout et centrage de l'arrière-plan
         this.background = this.add.image(
-            this.scale.width / 2,
-            this.scale.height / 2,
+            0, 
+            0,
             "imgBackground"
         );
         this.background.setDisplaySize(this.scale.width, this.scale.height); // Redimensionnement pour occuper tout l'écran
+        this.centerObject(this.background);
 
         // Ajout du logo Phaser
-        this.add.image(500, 250, "logoPhaser");
+        const logo = this.add.image(500, 250, "logoPhaser");
+        this.centerObject(logo);
     }
 
     update() {
