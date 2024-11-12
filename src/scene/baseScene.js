@@ -1,6 +1,6 @@
 // Définition de la scène par défaut qui hérite de Phaser.Scene
 export default class baseScene extends Phaser.Scene {
-    // Le constructeur initialise la scène avec un nom clé "DefaultScene"
+    // Le constructeur initialise la scène avec un nom clé "baseScene"
     constructor() {
         super({ key: "baseScene" });
     }
@@ -22,13 +22,13 @@ export default class baseScene extends Phaser.Scene {
         // "imgBackground" fait référence à l'image que l'on a chargée dans la méthode preload
         // Positionnement de l'arrière-plan au centre de l'écran (en fonction de la taille de la fenêtre)
         this.background = this.add.image(
-            window.innerWidth / 2, // Position X (au centre de l'écran)
-            window.innerHeight / 2, // Position Y (au centre de l'écran)
+            this.scale.width / 2, // Position X (au centre de l'écran)
+            this.scale.height / 2, // Position Y (au centre de l'écran)
             "imgBackground" // Clé de l'image de l'arrière-plan
         );
 
         // Redimensionnement de l'arrière-plan pour qu'il occupe toute la fenêtre
-        this.background.setDisplaySize(window.innerWidth, window.innerHeight);
+        this.background.setDisplaySize(this.scale.width, this.scale.height);
 
         // Ajout du logo Phaser au centre de la scène
         // Le logo est placé à la position (500, 250) sur la scène

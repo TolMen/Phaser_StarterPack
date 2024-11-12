@@ -8,14 +8,14 @@ function resizeGame(game) {
     const scene = game.scene.getScene("baseScene");
 
     // Vérifie si l'arrière-plan existe dans la scène (si oui, on le redimensionne et le repositionne)
-    if (scene.background) {
+    if (scene && scene.background) {
         // Ajuste la taille de l'arrière-plan à la nouvelle taille de la fenêtre
-        scene.background.setDisplaySize(window.innerWidth, window.innerHeight);
+        scene.background.setDisplaySize(scene.scale.width, scene.scale.height);
 
         // Repositionne l'arrière-plan pour qu'il soit centré dans la fenêtre du navigateur
         scene.background.setPosition(
-            window.innerWidth / 2, // Centre l'arrière-plan sur l'axe X (largeur de la fenêtre)
-            window.innerHeight / 2 // Centre l'arrière-plan sur l'axe Y (hauteur de la fenêtre)
+            scene.scale.width / 2, // Centre l'arrière-plan sur l'axe X (largeur de la fenêtre)
+            scene.scale.height / 2 // Centre l'arrière-plan sur l'axe Y (hauteur de la fenêtre)
         );
     }
 }
