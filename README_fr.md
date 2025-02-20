@@ -1,13 +1,13 @@
 
-### 🎮 Phaser_StarterPack
+# 🎮 Phaser Starter Pack
+> **Un projet personnel pour expérimenter Phaser et le développement de jeux 2D.** <br>
+> --> *Version : [English](README.md)* 📖
 
-Bienvenue dans **Phaser_StarterPack** !  
+## Description
 Ce dépôt fournit une base solide pour démarrer rapidement le développement de jeux 2D avec [Phaser](https://phaser.io/), un framework JavaScript populaire pour les jeux. <br>
 Ce StarterPack est destiné aux développeurs de tous niveaux, leur permettant de se concentrer directement sur la création du jeu sans se soucier des configurations de base.
 
----
-
-### 🎯 Objectifs
+## 🎯 Objectifs
 
 Ce StarterPack vise à offrir :  
 - Un **point de départ** pour les projets Phaser 3 avec une structure de fichier organisée.
@@ -15,9 +15,7 @@ Ce StarterPack vise à offrir :
 - Une **adaptation automatique de la fenêtre de jeu** pour une expérience utilisateur optimale.
 - Des **bonnes pratiques** en matière de modularité et de lisibilité du code.
 
----
-
-### ⚙️ Fonctionnalités
+## ⚙️ Fonctionnalités
 
 #### 1. **Configuration Phaser prête à l'emploi**
    Le fichier `setting.js` contient la configuration du jeu, notamment le moteur de rendu, la taille de la fenêtre et les paramètres physiques. 
@@ -28,14 +26,13 @@ Ce StarterPack vise à offrir :
 #### 3. **Structure modulaire du code**
    Les différents aspects de la configuration, des scènes et des styles sont séparés dans des dossiers dédiés pour une meilleure organisation.
 
----
 
-### 🛠️ Installation
+## 🛠️ Installation
 
-#### Prérequis
+### Prérequis
 Avant de commencer, installez **Node.js** et **npm** si vous souhaitez ajouter des dépendances.
 
-#### Étapes d'installation
+### Étapes d'installation
 1. **Clonez le dépôt** :
    ```bash
    git clone https://github.com/votre-utilisateur/Phaser_StarterPack.git
@@ -49,9 +46,7 @@ Avant de commencer, installez **Node.js** et **npm** si vous souhaitez ajouter d
 3. **Lancez le projet** :  
    Ouvrez `index.html` directement ou utilisez "Live Server" sous VS Code pour lancer un serveur local et voir le jeu en action.
 
----
-
-### 📁 Structure du Projet
+## 📁 Structure du Projet
 
 Voici la structure des fichiers dans le dépôt pour une vue d'ensemble rapide :
 
@@ -71,9 +66,9 @@ Phaser_StarterPack/
 └── README.md              # Documentation du projet
 ```
 
----
+--
 
-### 📜 Explication des fichiers
+## 📜 Explication des fichiers
 
 #### `index.html`
 Le fichier HTML de base. Il inclut Phaser via un CDN et charge le fichier `main.js`. Ce dernier instancie le jeu et lance la scène par défaut.
@@ -102,9 +97,7 @@ La scène par défaut :
 2. **Affiche l'arrière-plan et le logo** centrés et redimensionnés pour s'ajuster à l'écran.  
 3. **Possibilité d'animations** en ajoutant du code dans `update()`.
 
----
-
-### ✨ Ajouter une nouvelle scène
+## ✨ Ajouter une nouvelle scène
 
 Pour ajouter une nouvelle scène :  
 1. Créez un fichier dans `src/scene/` (ex. `newScene.js`).  
@@ -119,9 +112,7 @@ const config = {
 };
 ```
 
----
-
-### 🤝 Contribution
+## 🤝 Contribution
 
 Les contributions sont bienvenues ! Si vous souhaitez améliorer ce projet, ajouter des fonctionnalités ou corriger des bugs, voici comment contribuer :
 
@@ -146,6 +137,11 @@ Les contributions sont bienvenues ! Si vous souhaitez améliorer ce projet, ajou
 
 ---
 
-**Bon développement avec Phaser !** 🎮✨
+Merci d’avoir pris le temps de découvrir ce projet.  
+N’hésitez pas à l’explorer, l’apprendre et le modifier ! ✨  
 
----
+**Pour toute question ou collaboration, n’hésitez pas à me contacter ! 📩**
+
+[TolMen](https://github.com/TolMen) - [LinkedIn](https://www.linkedin.com/in/jessyfrachisse/)
+
+**Bon développement avec Phaser !** 🎮✨
